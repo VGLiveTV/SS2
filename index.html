@@ -87,8 +87,6 @@ const response = await fetch(
 );
 const data = await response.json();
 
-const channel = data.find(ch => ch.channel_name === "DD Sports");
-
 if (channel && channel.cookie) {
   cookieHeader = channel.cookie;
 }
